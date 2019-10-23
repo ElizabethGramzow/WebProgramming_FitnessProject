@@ -8,9 +8,9 @@ const app = express();
 const port = 3000;
 
 app
-    .use('/users', userController);
+    .use('/users', userController)
 
-    //.use('/exercises', exerciseController);
+    .use('/exercises', exerciseController);
 
 app.listen(port, () => console.log(`Running on http://localhost:${port}`));
 
