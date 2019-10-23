@@ -1,16 +1,16 @@
-import express from 'express';
-import path from 'path';
+const express = require('express');
+const path = require('path');
 
-import userController from './controllers/Users.js';
-import exerciseController from './controllers/Exercises.js';
+const userController = require('./controllers/Users');
+const exerciseController = require('./controllers/Exercises');
 
 const app = express();
 const port = 3000;
 
 app
-    .use('/users', userController)
+    .use('/users', userController);
 
-    .use('/exercises', exerciseController);
+    //.use('/exercises', exerciseController);
 
-app.listen(port, () => console.log('Running on http://localhost:${port}'));
+app.listen(port, () => console.log(`Running on http://localhost:${port}`));
 

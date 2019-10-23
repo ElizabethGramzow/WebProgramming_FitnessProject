@@ -1,5 +1,5 @@
-import express from 'express';
-import users from '../models/Users';
+const express = require('express');
+const users = require('../models/Users');
 
 const app = express.Router();
 
