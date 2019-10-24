@@ -1,7 +1,8 @@
 {
     "name": "fitness-tracker",
+    "author": "Elizabeth Gramzow",
     "version": "1.0.0",
-    "description": "",
+    "description": "Fitness Tracker app built for Web Programming class",
     "main": "index.js",
     "license": "MIT",
     "scripts": {
