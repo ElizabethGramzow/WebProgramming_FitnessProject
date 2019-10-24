@@ -70,16 +70,16 @@ app.post('/add', (req, res) => {
 
     //any included parameters are assigned to newExercise here
     if (req.query.type !== undefined){
-        newExercise.type = req.query.type;
+        newExercise.type = decodeURI(req.query.type);
     }
     if (req.query.description !== undefined){
-        newExercise.description = req.query.description;
+        newExercise.description = decodeURI(req.query.description);
     }
     if (req.query.location !== undefined){
-        newExercise.location = req.query.location;
+        newExercise.location = decodeURI(req.query.location);
     }
     if (req.query.duration !== undefined){
-        newExercise.duration = req.query.duration;
+        newExercise.duration = decodeURI(req.query.duration);
     }
 
     exercises.push(newExercise);
